@@ -42,7 +42,7 @@
         "errors": {},
         "message": "OK"
     }
-}</pre>
+	}</pre>
  
 * **Error Response:**
 
