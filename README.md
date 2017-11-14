@@ -42,8 +42,7 @@
         "errors": {},
         "message": "OK"
     }
-}
-</pre>
+}</pre>
  
 * **Error Response:**
 
@@ -64,6 +63,7 @@
         "message": "Error"
     }
 }</pre>
+
 OR
  * **Code:** 401 UnAuthorized <br />
  * **Content:** 
