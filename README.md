@@ -25,7 +25,8 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-  * **Content:** <pre>`{
+  * **Content:** 
+  <pre>`{
     "data": {
         "token": "xyzz",
         "lifetime": 2141364768
@@ -45,7 +46,8 @@
 * **Error Response:**
 
   * **Code:** 401 NOT FOUND <br />
-  * **Content:** <pre>`{
+  * **Content:** 
+  <pre>`{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -62,7 +64,8 @@
 }`</pre>
 OR
  * **Code:** 401 UnAuthorized <br />
- * **Content:** <pre>`{
+ * **Content:** 
+ <pre>`{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -108,7 +111,8 @@ OR
 * **Success Response:**
 
   * **Code:** 200 <br />
-  * **Content:** <pre>`{
+  * **Content:** 
+  <pre>`{
     "data": {
         "message": "success"
     },
@@ -125,7 +129,8 @@ OR
 }`</pre>
 OR
   * **Code:** 401 UnAuthorized <br />
-  * **Content:** <pre>`{
+  * **Content:** 
+  <pre>`{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -148,7 +153,8 @@ OR
 * **Error Response:**
 
   * **Code:** 401 Token not found <br />
-  * **Content:** <pre>`{
+  * **Content:** 
+  <pre>`{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -190,7 +196,8 @@ OR
 * **Success Response:**
 
   * **Code:** 200 <br />
-  * **Content:** <pre>`{
+  * **Content:** 
+  <pre>`{
     "data": {
         "message": "An e-mail has been sent to test@gmail.com with further instructions.",
         "resetToken": "9ebb8ebcf7a741d9b9b9884e306a35f9",
@@ -211,7 +218,8 @@ OR
 * **Error Response:**
 
   * **Code:** 500 Internal Server Error <br />
-  * **Content:** <pre>`{
+  * **Content:** 
+  <pre>`{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -228,7 +236,8 @@ OR
 }`</pre>
 OR
   * **Code:** 401 UnAuthorized <br />
-  * **Content:** <pre>`{
+  * **Content:** 
+  <pre>`{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -276,7 +285,8 @@ OR
 * **Success Response:**
 
   * **Code:** 200 <br />
-  * **Content:** <pre>`{
+  * **Content:** 
+  <pre>`{
     "data": {
         "message": "Password has been updated successfully."
     },
@@ -295,7 +305,8 @@ OR
 * **Error Response:**
 
   * **Code:** 500 Internal Server Error <br />
-  * **Content:** <pre>`{
+  * **Content:** 
+  <pre>`{
     "data": {},
     "meta": {
         "version": "1.0",
