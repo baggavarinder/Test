@@ -26,7 +26,8 @@
 
   * **Code:** 200 <br />
   * **Content:** 
-  <pre>{
+<pre>
+{
     "data": {
         "token": "xyzz",
         "lifetime": 2141364768
@@ -41,14 +42,14 @@
         "errors": {},
         "message": "OK"
     }
-}</pre>
-
- 
+}
+</pre> 
 * **Error Response:**
 
   * **Code:** 401 NOT FOUND <br />
   * **Content:** 
-  <pre>{
+<pre>
+ {
     "data": {},
     "meta": {
         "version": "1.0",
@@ -62,9 +63,8 @@
         },
         "message": "Error"
     }
-}</pre>
-
-
+}
+</pre>
 OR
  * **Code:** 401 UnAuthorized <br />
  * **Content:** 
