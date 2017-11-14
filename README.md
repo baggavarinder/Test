@@ -86,9 +86,8 @@ OR
         ],
         "message": "Error"
     }
-}</pre>
-
-
+}
+</pre>
 **Revoke authentication token (sign out)**
 ----
   Returns json data.
@@ -103,9 +102,11 @@ OR
   
 
 * **Data Params** </br>
-<pre>{
+<pre>
+{
 	token: [string] // Required
-}</pre>
+}
+</pre>
 
 * **Headers:**
 
@@ -115,7 +116,8 @@ OR
 
   * **Code:** 200 <br />
   * **Content:** 
-  <pre>{
+<pre>
+{
     "data": {
         "message": "success"
     },
@@ -129,11 +131,13 @@ OR
         "errors": {},
         "message": "OK"
     }
-}</pre>
+}
+</pre>
 OR
   * **Code:** 401 UnAuthorized <br />
   * **Content:** 
-  <pre>{
+<pre>
+{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -151,13 +155,14 @@ OR
         ],
         "message": "Error"
     }
-}</pre>
- 
+}
+</pre> 
 * **Error Response:**
 
   * **Code:** 401 Token not found <br />
   * **Content:** 
-  <pre>{
+<pre>
+{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -171,8 +176,8 @@ OR
         },
         "message": "Error"
     }
-}</pre>
-
+}
+</pre>
 **Send Reset Password Link API**
 ----
   Returns json data.
@@ -190,7 +195,8 @@ OR
 <pre>
 {
 	"email":[string] //Required
-}</pre>
+}
+</pre>
 
 * **Headers:**
 
@@ -200,7 +206,8 @@ OR
 
   * **Code:** 200 <br />
   * **Content:** 
-  <pre>{
+<pre>
+{
     "data": {
         "message": "An e-mail has been sent to test@gmail.com with further instructions.",
         "resetToken": "9ebb8ebcf7a741d9b9b9884e306a35f9",
@@ -216,13 +223,14 @@ OR
         "errors": {},
         "message": "OK"
     }
-}</pre>
- 
+}
+</pre> 
 * **Error Response:**
 
   * **Code:** 500 Internal Server Error <br />
   * **Content:** 
-  <pre>{
+<pre>
+{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -236,11 +244,13 @@ OR
         },
         "message": "Error"
     }
-}</pre>
+}
+</pre>
 OR
   * **Code:** 401 UnAuthorized <br />
   * **Content:** 
-  <pre>{
+<pre>
+{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -258,9 +268,8 @@ OR
         ],
         "message": "Error"
     }
-}</pre>
-
-
+}
+</pre>
 **Reset Password API**
 ----
   Returns json data about a updated password.
@@ -279,7 +288,8 @@ OR
 {
 	"password":"1234", //Reqruied
 	"confirmPassword":"1234" //Required
-}</pre>
+}
+</pre>
 
 * **Headers:**
 
@@ -289,7 +299,8 @@ OR
 
   * **Code:** 200 <br />
   * **Content:** 
-  <pre>{
+<pre>
+{
     "data": {
         "message": "Password has been updated successfully."
     },
@@ -303,13 +314,14 @@ OR
         "errors": {},
         "message": "OK"
     }
-}</pre>
- 
+}
+</pre> 
 * **Error Response:**
 
   * **Code:** 500 Internal Server Error <br />
   * **Content:** 
-  <pre>{
+<pre>
+{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -323,12 +335,13 @@ OR
         },
         "message": "Error"
     }
-}</pre>
-
+}
+</pre>
 OR
   * **Code:** 401 UnAuthorized <br />
   * **Content:** 
-  <pre>{
+<pre>
+{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -351,5 +364,5 @@ OR
         ],
         "message": "Error"
     }
-}</pre>
-
+}
+</pre>
