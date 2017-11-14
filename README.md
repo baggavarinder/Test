@@ -13,10 +13,10 @@
 
 * **Data Params** <br />
 <pre>
-`{
+{
 	Login: string, //Required
 	Password: string //Required
-}`
+}
 </pre>
 * **Headers:**
 
@@ -26,7 +26,7 @@
 
   * **Code:** 200 <br />
   * **Content:** 
-  <pre>`{
+  <pre>{
     "data": {
         "token": "xyzz",
         "lifetime": 2141364768
@@ -41,13 +41,13 @@
         "errors": {},
         "message": "OK"
     }
-}`</pre>
+}</pre>
  
 * **Error Response:**
 
   * **Code:** 401 NOT FOUND <br />
   * **Content:** 
-  <pre>`{
+  <pre>{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -61,11 +61,11 @@
         },
         "message": "Error"
     }
-}`</pre>
+}</pre>
 OR
  * **Code:** 401 UnAuthorized <br />
  * **Content:** 
- <pre>`{
+ <pre>{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -83,7 +83,7 @@ OR
         ],
         "message": "Error"
     }
-}`</pre>
+}</pre>
 
 
 **Revoke authentication token (sign out)**
@@ -100,9 +100,9 @@ OR
   
 
 * **Data Params** </br>
-<pre>`{
+<pre>{
 	token: [string] // Required
-}`</pre>
+}</pre>
 
 * **Headers:**
 
@@ -112,7 +112,7 @@ OR
 
   * **Code:** 200 <br />
   * **Content:** 
-  <pre>`{
+  <pre>{
     "data": {
         "message": "success"
     },
@@ -126,11 +126,11 @@ OR
         "errors": {},
         "message": "OK"
     }
-}`</pre>
+}</pre>
 OR
   * **Code:** 401 UnAuthorized <br />
   * **Content:** 
-  <pre>`{
+  <pre>{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -148,13 +148,13 @@ OR
         ],
         "message": "Error"
     }
-}`</pre>
+}</pre>
  
 * **Error Response:**
 
   * **Code:** 401 Token not found <br />
   * **Content:** 
-  <pre>`{
+  <pre>{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -168,7 +168,7 @@ OR
         },
         "message": "Error"
     }
-}`</pre>
+}</pre>
 
 **Send Reset Password Link API**
 ----
@@ -185,9 +185,9 @@ OR
 
 * **Data Params** </br>
 <pre>
-`{
+{
 	"email":[string] //Required
-}`</pre>
+}</pre>
 
 * **Headers:**
 
@@ -197,7 +197,7 @@ OR
 
   * **Code:** 200 <br />
   * **Content:** 
-  <pre>`{
+  <pre>{
     "data": {
         "message": "An e-mail has been sent to test@gmail.com with further instructions.",
         "resetToken": "9ebb8ebcf7a741d9b9b9884e306a35f9",
@@ -213,13 +213,13 @@ OR
         "errors": {},
         "message": "OK"
     }
-}`</pre>
+}</pre>
  
 * **Error Response:**
 
   * **Code:** 500 Internal Server Error <br />
   * **Content:** 
-  <pre>`{
+  <pre>{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -233,11 +233,11 @@ OR
         },
         "message": "Error"
     }
-}`</pre>
+}</pre>
 OR
   * **Code:** 401 UnAuthorized <br />
   * **Content:** 
-  <pre>`{
+  <pre>{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -255,7 +255,7 @@ OR
         ],
         "message": "Error"
     }
-}`</pre>
+}</pre>
 
 
 **Reset Password API**
@@ -273,10 +273,10 @@ OR
 
 * **Data Params** </br>
 <pre>
-`{
+{
 	"password":"1234", //Reqruied
 	"confirmPassword":"1234" //Required
-}`</pre>
+}</pre>
 
 * **Headers:**
 
@@ -286,7 +286,7 @@ OR
 
   * **Code:** 200 <br />
   * **Content:** 
-  <pre>`{
+  <pre>{
     "data": {
         "message": "Password has been updated successfully."
     },
@@ -300,13 +300,13 @@ OR
         "errors": {},
         "message": "OK"
     }
-}`</pre>
+}</pre>
  
 * **Error Response:**
 
   * **Code:** 500 Internal Server Error <br />
   * **Content:** 
-  <pre>`{
+  <pre>{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -320,7 +320,7 @@ OR
         },
         "message": "Error"
     }
-}`</pre>
+}</pre>
 
 OR
   * **Code:** 401 UnAuthorized <br />
