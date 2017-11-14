@@ -314,7 +314,7 @@ OR
 OR
   * **Code:** 401 UnAuthorized <br />
   * **Content:** 
-  <pre>```{
+  <pre>`{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -337,5 +337,5 @@ OR
         ],
         "message": "Error"
     }
-}```</pre>
+}`</pre>
 
