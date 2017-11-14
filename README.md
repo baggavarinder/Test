@@ -26,8 +26,7 @@
 
   * **Code:** 200 <br />
   * **Content:** 
-  <pre>
-  {
+  <pre>{
     "data": {
         "token": "xyzz",
         "lifetime": 2141364768
@@ -42,7 +41,7 @@
         "errors": {},
         "message": "OK"
     }
- }</pre>
+}</pre>
  
 * **Error Response:**
 
@@ -62,7 +61,7 @@
         },
         "message": "Error"
     }
- }</pre>
+}</pre>
 
 OR
  * **Code:** 401 UnAuthorized <br />
