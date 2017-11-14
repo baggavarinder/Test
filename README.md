@@ -48,7 +48,8 @@
 * **Error Response:**
 
   * **Code:** 401 NOT FOUND <br />
-  * **Content:** 
+  
+* **Content:** 
 <pre>
  {
     "data": {},
@@ -68,7 +69,8 @@
 </pre>
 OR
  * **Code:** 401 UnAuthorized <br />
- * **Content:** 
+
+* **Content:** 
  <pre>{
     "data": {},
     "meta": {
@@ -116,7 +118,8 @@ OR
 * **Success Response:**
 
   * **Code:** 200 <br />
-  * **Content:** 
+  
+* **Content:** 
 <pre>
 {
     "data": {
@@ -137,7 +140,8 @@ OR
 * **Error Response:**
 
   * **Code:** 401 Token not found <br />
-  * **Content:** 
+  
+* **Content:** 
 <pre>
 {
     "data": {},
@@ -157,7 +161,8 @@ OR
 </pre>
 OR
   * **Code:** 401 UnAuthorized <br />
-  * **Content:** 
+  
+* **Content:** 
 <pre>
 {
     "data": {},
@@ -206,7 +211,8 @@ OR
 * **Success Response:**
 
   * **Code:** 200 <br />
-  * **Content:** 
+  
+* **Content:** 
 <pre>
 {
     "data": {
@@ -229,7 +235,8 @@ OR
 * **Error Response:**
 
   * **Code:** 500 Internal Server Error <br />
-  * **Content:** 
+  
+* **Content:** 
 <pre>
 {
     "data": {},
@@ -249,7 +256,8 @@ OR
 </pre>
 OR
   * **Code:** 401 UnAuthorized <br />
-  * **Content:** 
+  
+* **Content:** 
 <pre>
 {
     "data": {},
@@ -299,7 +307,8 @@ OR
 * **Success Response:**
 
   * **Code:** 200 <br />
-  * **Content:** 
+  
+* **Content:** 
 <pre>
 {
     "data": {
@@ -320,7 +329,8 @@ OR
 * **Error Response:**
 
   * **Code:** 500 Internal Server Error <br />
-  * **Content:** 
+  
+* **Content:** 
 <pre>
 {
     "data": {},
@@ -340,7 +350,8 @@ OR
 </pre>
 OR
   * **Code:** 401 UnAuthorized <br />
-  * **Content:** 
+  
+* **Content:** 
 <pre>
 {
     "data": {},
