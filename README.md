@@ -133,6 +133,27 @@ OR
     }
 }
 </pre>
+* **Error Response:**
+
+  * **Code:** 401 Token not found <br />
+  * **Content:** 
+<pre>
+{
+    "data": {},
+    "meta": {
+        "version": "1.0",
+		"received": 1510645738705,
+        "executed": 1510645554641
+    },
+    "response": {
+        "code": 401,
+        "errors": {
+            "message": "No Token found."
+        },
+        "message": "Error"
+    }
+}
+</pre>
 OR
   * **Code:** 401 UnAuthorized <br />
   * **Content:** 
@@ -157,27 +178,6 @@ OR
     }
 }
 </pre> 
-* **Error Response:**
-
-  * **Code:** 401 Token not found <br />
-  * **Content:** 
-<pre>
-{
-    "data": {},
-    "meta": {
-        "version": "1.0",
-		"received": 1510645738705,
-        "executed": 1510645554641
-    },
-    "response": {
-        "code": 401,
-        "errors": {
-            "message": "No Token found."
-        },
-        "message": "Error"
-    }
-}
-</pre>
 **Send Reset Password Link API**
 ----
   Returns json data.
