@@ -25,7 +25,7 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-  * **Content:** 
+**Content:** 
 <pre>
 {
     "data": {
