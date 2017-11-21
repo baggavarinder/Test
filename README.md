@@ -1,3 +1,5 @@
+- [AclHelper](./aclhelper.md)
+
 **Authentication API**
 ----
   Returns json data about logged in user.
