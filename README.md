@@ -1,4 +1,4 @@
-- [AclHelper](./aclhelper.md)
+- [AclHelper](aclhelper.md)
 
 **Authentication API**
 ----
