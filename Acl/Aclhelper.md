@@ -23,9 +23,9 @@ Adds the given permissions to the given roles over the given resources.
 
 [
 	{
-		 "roles": ["guest", "admin"] , 
+	 "roles": ["guest", "admin"] , 
 	 "allows":[ { "resources": "url to add the permission", "permissions": ["methodType","methodType"] } ] 
-}
+    }
 ]
 	
 </pre>
@@ -109,8 +109,8 @@ Adds roles to a given user id.
 <pre>
 
 {
-"user":"test",
-"role":"rolename"
+  "user":"test",
+  "role":"rolename"
 }
 	
 </pre>
