@@ -25,8 +25,6 @@ Adds the given permissions to the given roles over the given resources. These pe
 
 **Acl Assign Role API**
 ----
-allow( roles, resources, permissions, function(err) )
-
 Adds roles to a given user id.
 
 * **URL**
@@ -113,11 +111,11 @@ Adds roles to a given user id.
 }
 </pre>
 
-**Acl Get Role API**
+**Acl Get specfic user permission API**
 ----
-allow( roles, resources, permissions, function(err) )
+Returns all the allowable permissions a given user have to access the given resources.
 
-Adds roles to a given user id.
+It returns an array of objects where every object maps a resource name to a list of permissions for that resource.
 
 * **URL**
 
