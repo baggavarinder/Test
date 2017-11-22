@@ -48,7 +48,10 @@ Send a new transactional message through Mandrill
   "template_content": [ { "name": "test", "title": "Mandrill Testing" } ],
    "message":
     { 
-     "to": [{"name": "test", "email": "test@test.com", "type": "to"}, {"name": "test1", "email": "test@test.com", "type": "to"}],
+     "to": [
+			 {"name": "test", "email": "test@test.com", "type": "to"}, 
+			 {"name": "test1", "email": "test@test.com", "type": "to"}
+		],
      "from_email": "test@test.com",
      "html": "Test",
      "subject": "Test",
@@ -71,11 +74,18 @@ Send a new transactional message through Mandrill
 * **Content:** 
 <pre>
 {
-     "data": {
-        "response": {
-            "Message": "Role added"
+     "data": [
+        {
+            "email": "test@test.com",
+            "status": "queued",
+            "_id": "59d3f80fe3f44bfdba92e29ef107e7cd"
+        },
+        {
+            "email": "test1@test.com",
+            "status": "queued",
+            "_id": "8d4d376116eb4c2fb25cf67fb7989950"
         }
-    },
+    ],
     "meta": {
         "version": "1.0",
 		"received": 1510645738705,
@@ -103,19 +113,13 @@ Send a new transactional message through Mandrill
         "executed": 1510644863715
     },
     "response": {
-        "code": 401,
-        "errors": [
-            {
-                "param": "user",
-                "msg": "user is required",
-                "value": ""
-            },
-            {
-                "param": "resource",
-                "msg": "resource is required",
-                "value": ""
-            }
-        ],
+        "code": 400,
+         "errors": {
+            "status": "error",
+            "code": 5,
+            "name": "Unknown_Template",
+            "message": "No such template \"test13452\""
+        },
         "message": "Error"
     }
 }
