@@ -12,7 +12,8 @@ Send a new transactional message through Mandrill
   
 
 * **Data Params** <br />
-
+<pre>
+{
 template_name   :{String} Required* name of a template. 
 template_content:{Array} Required* array of template content. 
 Each item of array contain two keys:ame(name of the content block) and title(actual title to put). 
@@ -35,7 +36,8 @@ text      :{string}  optional full text
 send_at:{string}  Optional  for scheduling email at a specific time. Validation: datetime 
 ip_pool:{string}  Optional  name of the dedicated ip pool to be used 
 async  :{boolean} Optional  Default to false for less than 10 recipient and true for more than 10 recipient. 
-
+}
+</pre>
 * **Exapmle** <br />
 <pre>
 {
@@ -45,17 +47,15 @@ async  :{boolean} Optional  Default to false for less than 10 recipient and true
     { 
      "to": [{"name": "test", "email": "test@test.com", "type": "to"}, {"name": "test1", "email": "test@test.com", "type": "to"}],
      "from_email": "test@test.com",
-     "html": "<p>Test</p>",
+     "html": "Test",
      "subject": "Test",
      "from_name": "Test",
-     "text": "Testing mandrill" 
-    	
+     "text": "Testing mandrill" 	
     },
   "send_at": "2017-11-22T08:19:31.299Z",
   "ip_pool": "Main-pool",
   "async": "false"
-  }
-	
+}
 </pre>
 * **Headers:**
 
