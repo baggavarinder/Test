@@ -99,12 +99,14 @@ Send a new transactional message through Mandrill
             "_id": "8d4d376116eb4c2fb25cf67fb7989950"
         }
     ],
-    "meta": {
+    "meta": 
+	{
         "version": "1.0",
 		"received": 1510645738705,
         "executed": 1510644768421
     },
-    "response": {
+    "response": 
+	{
         "code": 200,
         "errors": {},
         "message": "OK"
@@ -120,7 +122,8 @@ Send a new transactional message through Mandrill
 <pre>
  {
     "data": {},
-    "meta": {
+    "meta":
+	{
         "version": "1.0",
 		"received": 1510645738705,
         "executed": 1510644863715
