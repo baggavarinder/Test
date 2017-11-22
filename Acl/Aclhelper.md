@@ -151,9 +151,10 @@ It returns an array of objects where every object maps a resource name to a list
 <pre>
 {
      "data": {
-        "response": {
-            "Message": "Role added"
-        }
+        "resourec url": [
+            "post",
+            "put"
+        ]
     },
     "meta": {
         "version": "1.0",
