@@ -12,30 +12,30 @@ Send a new transactional message through Mandrill
   
 
 * **Data Params** <br />
-<pre>
-    template_name   :{String} Required* name of a template. 
-    template_content:{Array} Required* array of template content. 
-	
-	Each item of array contain two keys:ame(name of the content block) and title(actual title to put). 
+
+template_name   :{String} Required* name of a template. 
+template_content:{Array} Required* array of template content. 
+Each item of array contain two keys:ame(name of the content block) and title(actual title to put). 
 					 
-	message(Required*)         
-	{
-	    to:{Array} Required* Parameters: 
-			[{
-                Email:{string} Required* email address of the recipient.
-				Name :{string} Optional  display name.
-				Type :{string} Optional  If not provide default is "to" .
-            }]
-			from_email:{string}  Required* sender email address.
-			html      :{string}  optional full HTML
-			subject   :{string}  optional message subject
-			from_name :{string}  optional from name
-			text      :{string}  optional full text
-	} 
-	send_at:{string}  Optional  for scheduling email at a specific time. Validation: datetime 
-	ip_pool:{string}  Optional  name of the dedicated ip pool to be used 
-	async  :{boolean} Optional  Default to false for less than 10 recipient and true for more than 10 recipient. 
-</pre>
+message(Required*)         
+{
+	 to:{Array} Required* Parameters: 
+[{
+
+    Email:{string} Required* email address of the recipient.
+    Name :{string} Optional  display name.
+	Type :{string} Optional  If not provide default is "to" .
+}]
+from_email:{string}  Required* sender email address.
+html      :{string}  optional full HTML
+subject   :{string}  optional message subject
+from_name :{string}  optional from name
+text      :{string}  optional full text
+} 
+send_at:{string}  Optional  for scheduling email at a specific time. Validation: datetime 
+ip_pool:{string}  Optional  name of the dedicated ip pool to be used 
+async  :{boolean} Optional  Default to false for less than 10 recipient and true for more than 10 recipient. 
+
 * **Exapmle** <br />
 <pre>
 {
