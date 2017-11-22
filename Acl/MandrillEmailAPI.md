@@ -101,9 +101,9 @@ Send a new transactional message through Mandrill
     ],
     "meta": 
 	{
-        "version": "1.0",
-		"received": 1510645738705,
-        "executed": 1510644768421
+		 "version": "1.0",
+		 "received": 1510645738705,
+		 "executed": 1510644768421
     },
     "response": 
 	{
@@ -124,9 +124,9 @@ Send a new transactional message through Mandrill
     "data": {},
     "meta":
 	{
-        "version": "1.0",
+		"version": "1.0",
 		"received": 1510645738705,
-        "executed": 1510644863715
+		"executed": 1510644863715
     },
     "response": {
         "code": 400,
