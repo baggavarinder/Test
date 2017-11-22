@@ -70,9 +70,9 @@ Adds roles to a given user id.
     },
     "meta": 
 	{
-        "version": "1.0",
-		"received": 1510645738705,
-        "executed": 1510644768421
+	  "version": "1.0",
+	  "received": 1510645738705,
+	  "executed": 1510644863715
     },
     "response": 
 	{
@@ -93,9 +93,9 @@ Adds roles to a given user id.
     "data": {},
     "meta": 
 	{
-        "version": "1.0",
-		"received": 1510645738705,
-        "executed": 1510644863715
+	  "version": "1.0",
+	  "received": 1510645738705,
+	  "executed": 1510644863715
     },
     "response": 
 	{
@@ -166,9 +166,9 @@ It returns an array of objects where every object maps a resource name to a list
     },
     "meta": 
 	{
-        "version": "1.0",
-		"received": 1510645738705,
-        "executed": 1510644768421
+	  "version": "1.0",
+	  "received": 1510645738705,
+	  "executed": 1510644863715
     },
     "response": 
 	{
@@ -189,9 +189,9 @@ It returns an array of objects where every object maps a resource name to a list
     "data": {},
     "meta": 
 	{
-        "version": "1.0",
-		"received": 1510645738705,
-        "executed": 1510644863715
+	  "version": "1.0",
+	  "received": 1510645738705,
+	  "executed": 1510644863715
     },
     "response": 
 	{
