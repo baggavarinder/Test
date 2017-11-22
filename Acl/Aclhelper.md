@@ -2,7 +2,7 @@
 ----
 allow( roles, resources, permissions, function(err) )
 
-Adds the given permissions to the given roles over the given resources. these permission are define in server.ts file only.
+Adds the given permissions to the given roles over the given resources. these permission are defined in server.ts file only.
 
 
 * **Data Params** <br />
@@ -11,7 +11,7 @@ Adds the given permissions to the given roles over the given resources. these pe
     resources   {String|Array} resource(s) to add permisisons to. (Required)
     permissions {String|Array} permission(s) to add to the roles over the resources. (Required)
 </pre>  
-
+* **sample data** <br />
 <pre>
 * **sample data for adding permission** <br />
 [
@@ -44,6 +44,7 @@ Adds roles to a given user id.
     userId   {String|Number} User id. (Required)
     roles    {String|Array} Role(s) to add to the user id.(Required)
 </pre>
+* **exapmle** <br />
 <pre>
 
 {
@@ -133,6 +134,7 @@ Adds roles to a given user id.
    userId    {String|Number} User id.
     resources {String|Array} resource(s) to ask permissions for.
 </pre>
+* **exapmle** <br />
 <pre>
 {
 "userId":"test",
