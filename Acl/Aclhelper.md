@@ -11,7 +11,7 @@ Adds the given permissions to the given roles over the given resources. These pe
     resources   {String|Array} resource(s) to add permisisons to. (Required)
     permissions {String|Array} permission(s) to add to the roles over the resources. (Required)
 </pre>  
-* **sample data for adding permission** <br />
+* **Sample data for adding permission** <br />
 <pre>
 [
 	{
@@ -43,7 +43,7 @@ Adds roles to a given user id.
     userId   {String|Number} User id. (Required)
     roles    {String|Array} Role(s) to add to the user id.(Required)
 </pre>
-* **exapmle** <br />
+* **Exapmle** <br />
 <pre>
 
 {
@@ -133,7 +133,7 @@ Adds roles to a given user id.
    userId    {String|Number} User id.
     resources {String|Array} resource(s) to ask permissions for.
 </pre>
-* **exapmle** <br />
+* **Exapmle** <br />
 <pre>
 {
 "userId":"test",
