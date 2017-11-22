@@ -21,12 +21,11 @@ Each item of array contain two keys:ame(name of the content block) and title(act
 message(Required*)         
 {
 	 to:{Array} Required* Parameters: 
-[{
-
-    Email:{string} Required* email address of the recipient.
-    Name :{string} Optional  display name.
-	Type :{string} Optional  If not provide default is "to" .
-}]
+	[{
+		Email:{string} Required* email address of the recipient.
+		Name :{string} Optional  display name.
+		Type :{string} Optional  If not provide default is "to" .
+	}]
 from_email:{string}  Required* sender email address.
 html      :{string}  optional full HTML
 subject   :{string}  optional message subject
