@@ -4,7 +4,7 @@ Send a new transactional message through Mandrill
 
 * **URL**
 
-  /messages
+  /emailSent
 
 * **Method:**
 
@@ -14,14 +14,17 @@ Send a new transactional message through Mandrill
 * **Data Params** <br />
 <pre>
     template_name    {String} Required* name of a template. 
-    template_content {Array} Required* array of template content. Each item of array contain two keys: name(name of the content block) and content(actual content to put). 
+    template_content {Array} Required* array of template content. Each item of array contain two keys:
+    name(name of the content block) and content(actual content to put). 
 	message           Required* 
 	{
 	                to             {Array} Required* Parameters: 
 					
-					                   Email {string} Required* email address of the recipient
+					                   [{
+                                       Email {string} Required* email address of the recipient
 									   Name  {string} Optional  display name
 									   Type  {string} Optional  If not provide default is "to" 
+                                       }]
 									   
 					from_email	   {string}  Required* sender email address.
 					html           {string}  optional full HTML
