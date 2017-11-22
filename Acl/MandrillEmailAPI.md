@@ -45,18 +45,23 @@ Send a new transactional message through Mandrill
 <pre>
 {
   "template_name": "test13452",
-  "template_content": [ { "name": "test", "title": "Mandrill Testing" } ],
+  "template_content":[ 
+						  {
+							  "name": "test", 
+							  "title": "Mandrill Testing" 
+						  } 
+					 ],
    "message":
     { 
-     "to": [
-			 {"name": "test", "email": "test@test.com", "type": "to"}, 
-			 {"name": "test1", "email": "test@test.com", "type": "to"}
-		],
-     "from_email": "test@test.com",
-     "html": "Test",
-     "subject": "Test",
-     "from_name": "Test",
-     "text": "Testing mandrill" 	
+		"to": [
+				 {"name": "test", "email": "test@test.com", "type": "to"}, 
+				 {"name": "test1", "email": "test@test.com", "type": "to"}
+			],
+		"from_email": "test@test.com",
+		"html": "Test",
+		"subject": "Test",
+		"from_name": "Test",
+		"text": "Testing mandrill" 	
     },
   "send_at": "2017-11-22T08:19:31.299Z",
   "ip_pool": "Main-pool",
