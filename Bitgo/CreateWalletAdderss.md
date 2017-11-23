@@ -3,9 +3,11 @@
 Description:create a new receive address for your wallet.
 
 * **URL:**
-   /bitgo/generateWalletAddress
 
-* **Method: **
+    /bitgo/generateWalletAddress
+
+* **Method:**
+
    POST
 
    
@@ -14,6 +16,7 @@ Description:create a new receive address for your wallet.
 * **Headers:**
 
 Content-Type: "application/json"
+
 Authorization(bitgo access-token)        {String} *Required. 
    
 * **Query Parameters:**
