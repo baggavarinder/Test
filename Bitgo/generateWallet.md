@@ -1,47 +1,48 @@
-* **Generate Wallet**
+**Generate Wallet Api**
+----
+ Description:generate wallet.
 
-   * **Description:**
-   generate wallet.
+* **URL:**
 
-   * **URL:**
+bitgo/createWallet
 
-   bitgo/createWallet
+* **Method:**
 
-   Method: POST
-
+POST
    
-   * **Query String Parameters:**<br />
+* **Query String Parameters:**<br />
    
-   * **Headers:**
+* **Headers:**
 
-    Content-Type: "application/json"
-   
-    Authorization(bitgo access-token)        {String} *Required 
+Content-Type: "application/json"
 
-   	
-   
-   * **Body:**
-
+Authorization(bitgo access-token)        {String} *Required
+   	  
+* **Body:**
+<pre>
+{
     label        {String} *Required name for the wallet	
     passphrase   {String} *Required Passphrase to decrypt the wallet’s private key       
-	wallettype   {String} *Required wallet type of coin.       
-    
+	wallettype   {String} *Required wallet type of coin.
+}    
+</pre>
 
-   Example:
-
+* **Example:**
+<pre>
 	{
 		"label":"leela",
 		"passphrase":"secretpassphrase1a5df8380e0e30",
 		"walletType":"tltc"
 	}
+</pre>
 
-	* **Success Response:**
+* **Success Response:**
 
-	* **Code:** 200 <br />
+* **Code:** 200 <br />
 
-	* **Content:**
-
-     {
+* **Content:**
+<pre>
+{
     "data": {
         "wallet": {
             "bitgo": {
@@ -143,31 +144,32 @@
         "message": "OK"
     }
 }
+</pre>
 
+* **Error Response:**
 
-
-	* **Error Response:**
-
-	* **Code:** 401 NOT FOUND <br />
+* **Code:** 401 NOT FOUND <br />
   
-	* **Content:** 
-	
-			{
-				"data": {},
-				"meta": {
-					"version": "1.0",
-					"received": "2017-11-23T11:03:20.235Z",
-					"executed": 1511435000235
-				},
-				"response": {
-					"code": 401,
-					"errors": [
-						{
-							"param": "passphrase",
-							"msg": "passphrase is required",
-							"value": ""
-						}
-					],
-					"message": "Error"
-				}
-			}
+* **Content:** 
+<pre>
+{
+	"data": {},
+	"meta": 
+	{
+		"version": "1.0",
+		"received": "2017-11-23T11:03:20.235Z",
+		"executed": 1511435000235
+	},
+	"response": 
+	{
+		"code": 401,
+		"errors":
+		[{
+			"param": "passphrase",
+			"msg": "passphrase is required",
+			"value": ""
+		}],
+	"message": "Error"
+    }
+}
+</pre>

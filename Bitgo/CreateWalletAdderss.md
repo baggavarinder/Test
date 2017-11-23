@@ -1,46 +1,47 @@
-* **Create Wallet Address**
+**Create Wallet Address**
+----
+Description:create a new receive address for your wallet.
 
-   * **Description:**
-   create a new receive address for your wallet.
-
-   * **URL:**
+* **URL:**
    /bitgo/generateWalletAddress
 
-   * **Method: **
+* **Method: **
    POST
 
    
-   * **Query String Parameters:**<br />
+ * **Query String Parameters:**<br />
    
-   * **Headers:**
+* **Headers:**
 
-		Content-Type: "application/json"
+Content-Type: "application/json"
+Authorization(bitgo access-token)        {String} *Required. 
    
-		Authorization(bitgo access-token)        {String} *Required 
-   
-   
-    * **Query Parameters:**
-						  coin   {String} *Required coin.
-							id   {String} *Required Id of the wallet.
-			
-	* **Body Parameters:**
-    						gasPrice   {Integer} Optional gasPrice.
-							
-    
-    * **Example:**
+* **Query Parameters:**
+<pre>
+{
+   coin   {String} *Required coin.
+   id   {String} *Required Id of the wallet.
+}
+</pre>
+
+* **Body Parameters:**
+
+gasPrice   {Integer} Optional gasPrice.
+	   
+* **Example:**
 
 	{
-		"coin":"tltc",
+		"gasPrice":100,
 		"id":"5a15790fb1d959c307149a60a7bc5a98"
 	}
 
-		* **Success Response:**
+* **Success Response:**
 
-		* **Code:** 200 <br />
+* **Code:** 200 <br />
   
-		* **Content:**
-
-        {
+* **Content:**
+<pre>
+{
     "data": {
         "id": "5a16b21102dd91c107f99963c9863ee3",
         "address": "QijmP4XDfEKzcf9DLRnQZ1XSP3eQG5gCf7",
@@ -63,30 +64,35 @@
         "message": "OK"
     }
 }
+</pre>
 		
-		
-		* **Error Response:**
+* **Error Response:**
 
-		* **Code:** 401 NOT FOUND <br />
+* **Code:** 401 NOT FOUND <br />
   
-		* **Content:** 
-		
-		{
-			"data": {},
-			"meta": {
-				"version": "1.0",
-				"received": "2017-11-23T11:35:40.906Z",
-				"executed": 1511436940906
-			},
-			"response": {
-				"code": 401,
-				"errors": [
-					{
-						"param": "id",
-						"msg": "wallet id is required",
-						"value": ""
-					}
-				],
-				"message": "Error"
-			}
+* **Content:** 
+<pre>		
+{
+	"data": {},
+	"meta": 
+	{
+	  "version": "1.0",
+	  "received": "2017-11-23T11:35:40.906Z",
+	  "executed": 1511436940906
+	},
+	"response": 
+	{ 
+	  "code": 401,
+	  "errors": 
+	  [
+	    {
+		    "param": "id",
+		    "msg": "wallet id is required",
+		    "value": ""
 		}
+	   ],
+	"message": "Error"
+			
+	}
+}
+</pre>

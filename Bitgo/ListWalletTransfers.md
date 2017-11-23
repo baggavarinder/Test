@@ -1,45 +1,36 @@
-* **List wallet transfers**
+**List wallet transfers**
+----
+* **Description:Retrieves a list of transfers.
 
-   * **Description:**
-   Retrieves a list of transfers.
+* **URL:**
 
-   * **URL:**
-   /bitgo/getWalletTransactions
+ /bitgo/getWalletTransactions
 
-   * **Method: **
+* **Method: **
+
    GET
 
    
-   * **Query String Parameters:**<br />
-   
-   * **Headers:**
+* **Query String Parameters:**<br />
+<pre>
+{
+   coin   {String} *Required coin.
+   id   {String} *Required Id of the wallet.
+}
+</pre> 
+* **Headers:**
 
-		Content-Type: "application/json"
-   
-		Authorization(bitgo access-token)        {String} *Required 
-   
-   
-    * **Query Parameters:**
-						  coin   {String} *Required coin.
-							id   {String} *Required Id of the wallet.
-			
-	
-							
-    
-    * **Example:**
+Content-Type: "application/json"
+Authorization(bitgo access-token)        {String} *Required 
 
-	{
-		"coin":"tltc",
-		"id":"5a15790fb1d959c307149a60a7bc5a98"
-	}
+* **Success Response:**<br />
 
-		* **Success Response:**
-
-		* **Code:** 200 <br />
+* **Code:** 200 <br />
   
-		* **Content:**
-
-        {
+* **Content:**<br />
+<pre>
+{
+		
     "data": {
         "coin": "tltc",
         "transfers": []
@@ -55,15 +46,15 @@
         "message": "OK"
     }
 }
-		
-		
-		* **Error Response:**
+</pre>
 
-		* **Code:** 401 NOT FOUND <br />
+* **Error Response:**
+
+* **Code:** 401 NOT FOUND <br />
   
-		* **Content:** 
-		
-		{
+* **Content:** 
+<pre>
+{
     "data": {},
     "meta": {
         "version": "1.0",
@@ -82,3 +73,4 @@
         "message": "Error"
     }
 }
+</pre>

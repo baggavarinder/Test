@@ -130,14 +130,14 @@ POST
 	  {
 	    "status": 401,
 	    "result": 
-	      {
-		    "name": "OAuth2Error",
-		    "message": false,
-		    "needsOTP": true,
-		    "needsAuthy": true,
-		    "code": 401,
-		    "error": "needs_otp",
-		    "error_description": "needs_otp"
+	    {
+		  "name": "OAuth2Error",
+		  "message": false,
+		  "needsOTP": true,
+		  "needsAuthy": true,
+		  "code": 401,
+		  "error": "needs_otp",
+		  "error_description": "needs_otp"
 	    },
 	 "needsOTP": true
 	},
