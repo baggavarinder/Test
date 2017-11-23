@@ -1,20 +1,27 @@
 * **Authenticate**
+---
+Description: authenticate the user.
 
-   Description: authenticate the user.
+* **URL**
 
-   URL: bitgo/authenticate
+ bitgo/authenticate
 
-   Method: POST
+* **Method:** 
+POST
+  
 
-     * **Parameters:** <br>
+* **Data Params** <br />
+
 <pre>
-
+{
 	 username   {String} *Required User's email address.
 	 password   {String} *Required password.
 	 otp   {String} *Required 2nd factor authentication token.
-	 
+}	 
 </pre>   
-     * **Example:** <br/>
+
+* **Example:** <br/>
+
 <pre>
 { 
   "username": "baggavarinder@gmail.com",
@@ -23,7 +30,8 @@
 }
 </pre>  
 
-    * **API Response:**
+* **Success Response:**
+
 <pre>
 {
     "data": {
@@ -104,7 +112,8 @@
 }
 </pre>
 	
-	* **Error Response:**
+* **Error Response:**
+
 <pre>
 {
 		"data": {},
