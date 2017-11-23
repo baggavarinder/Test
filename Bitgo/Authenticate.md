@@ -116,13 +116,15 @@ POST
 
 <pre>
 {
-	"data": {},
-	"meta": {
+  "data": {},
+  "meta": 
+    {
     "version": "1.0",
     "received": "2017-11-23T10:49:11.104Z",
     "executed": 1511434153310
 	},
-	"response": {
+	"response": 
+	{
 	"code": 400,
 	"errors": 
 	{
@@ -136,7 +138,7 @@ POST
 		"code": 401,
 		"error": "needs_otp",
 		"error_description": "needs_otp"
-	},
+	  },
 	"needsOTP": true
 	},
 	"message": "Error"
