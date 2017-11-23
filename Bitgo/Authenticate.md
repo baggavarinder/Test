@@ -4,10 +4,11 @@ Description: authenticate the user.
 
 * **URL**
 
- bitgo/authenticate
+    bitgo/authenticate
 
 * **Method:** 
-POST
+
+    POST
   
 
 * **Data Params** <br />
@@ -145,7 +146,7 @@ POST
 }
 </pre>
 
-or
+OR
 
 <pre>
 {

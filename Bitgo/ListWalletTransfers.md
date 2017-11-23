@@ -6,7 +6,7 @@ Description:Retrieves a list of transfers.
 
     /bitgo/getWalletTransactions
 
-* **Method: **
+* **Method:**
 
     GET
 
