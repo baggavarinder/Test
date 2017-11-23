@@ -6,25 +6,26 @@
 
    Method: POST
 
-   Parameters:
+     * **Parameters:** <br>
+<pre>
 
- username   {String} *Required User's email address.
- password   {String} *Required password.
-      otp   {String} *Required 2nd factor authentication token.
-    
-    
+	 username   {String} *Required User's email address.
+	 password   {String} *Required password.
+	 otp   {String} *Required 2nd factor authentication token.
+	 
+</pre>   
+     * **Example:** <br/>
+<pre>
+{ 
+  "username": "baggavarinder@gmail.com",
+  "password": "sol!mp2^5sp",
+  "otp":"248989" 
+}
+</pre>  
 
-    Example:
-
-	{ 
-		"username": "baggavarinder@gmail.com",
- 		"password": "sol!mp2^5sp",
- 		"otp":"248989" 
-	}
-
-    API Response:
-
-        {
+    * **API Response:**
+<pre>
+{
     "data": {
         "token_type": "bearer",
         "expires_in": 3600,
@@ -101,10 +102,11 @@
         "message": "OK"
     }
 }
-		
-	Error Response:
+</pre>
 	
-		{
+	* **Error Response:**
+<pre>
+{
 		"data": {},
 		"meta": {
         "version": "1.0",
@@ -129,19 +131,38 @@
 				"message": "Error"
 					}
 		}
+</pre>
 
+or
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<pre>
+{
+		"data": {},
+		"meta": {
+        "version": "1.0",
+        "received": "2017-11-23T10:49:11.104Z",
+        "executed": 1511434153310
+		},
+		"response": {
+				"code": 400,
+				 "errors": [
+            {
+                "param": "username",
+                "msg": "id is required",
+                "value": ""
+            },
+            {
+                "param": "password",
+                "msg": "wallet type is required",
+                "value": ""
+            },
+            {
+                "param": "otp",
+                "msg": "2fa token is required",
+                "value": ""
+            }
+        ],
+				"message": "Error"
+					}
+		}
+</pre>
