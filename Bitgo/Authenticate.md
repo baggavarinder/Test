@@ -116,62 +116,67 @@ POST
 
 <pre>
 {
-		"data": {},
-		"meta": {
-        "version": "1.0",
-        "received": "2017-11-23T10:49:11.104Z",
-        "executed": 1511434153310
-		},
-		"response": {
-				"code": 400,
-				"errors": {
-					"status": 401,
-					"result": {
-						"name": "OAuth2Error",
-						"message": false,
-						"needsOTP": true,
-						"needsAuthy": true,
-						"code": 401,
-						"error": "needs_otp",
-						"error_description": "needs_otp"
-					},
-					"needsOTP": true
-				},
-				"message": "Error"
-					}
-		}
+	"data": {},
+	"meta": {
+    "version": "1.0",
+    "received": "2017-11-23T10:49:11.104Z",
+    "executed": 1511434153310
+	},
+	"response": {
+	"code": 400,
+	"errors": 
+	{
+	  "status": 401,
+	  "result": 
+	  {
+		"name": "OAuth2Error",
+		"message": false,
+		"needsOTP": true,
+		"needsAuthy": true,
+		"code": 401,
+		"error": "needs_otp",
+		"error_description": "needs_otp"
+	},
+	"needsOTP": true
+	},
+	"message": "Error"
+}
+}
 </pre>
 
 or
 
 <pre>
 {
-		"data": {},
-		"meta": {
-        "version": "1.0",
-        "received": "2017-11-23T10:49:11.104Z",
-        "executed": 1511434153310
-		},
-		"response": {
-				"code": 400,
-				 "errors": [
-            {
-                "param": "username",
-                "msg": "id is required",
-                "value": ""
-            },
-            {
-                "param": "password",
-                "msg": "wallet type is required",
-                "value": ""
-            },
-            {
-                "param": "otp",
-                "msg": "2fa token is required",
-                "value": ""
-            }
-        ],
-				"message": "Error"
-					}
-		}
+  "data": {},
+  "meta": 
+  {
+    "version": "1.0",
+    "received": "2017-11-23T10:49:11.104Z",
+    "executed": 1511434153310
+  },
+  "response": 
+  {
+    "code": 400,
+	"errors": 
+	[
+     {
+        "param": "username",
+        "msg": "id is required",
+        "value": ""
+     },
+     {
+       "param": "password",
+       "msg": "wallet type is required",
+       "value": ""
+     },
+     {
+       "param": "otp",
+       "msg": "2fa token is required",
+       "value": ""
+     }
+    ],
+   "message": "Error"
+  }
+}
 </pre>
