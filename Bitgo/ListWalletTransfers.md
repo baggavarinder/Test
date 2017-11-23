@@ -1,14 +1,14 @@
 **List wallet transfers**
 ----
-* **Description:Retrieves a list of transfers.
+Description:Retrieves a list of transfers.
 
 * **URL:**
 
- /bitgo/getWalletTransactions
+    /bitgo/getWalletTransactions
 
 * **Method: **
 
-   GET
+    GET
 
    
 * **Query String Parameters:**<br />
@@ -18,9 +18,11 @@
    id   {String} *Required Id of the wallet.
 }
 </pre> 
+
 * **Headers:**
 
 Content-Type: "application/json"
+
 Authorization(bitgo access-token)        {String} *Required 
 
 * **Success Response:**<br />
@@ -28,6 +30,7 @@ Authorization(bitgo access-token)        {String} *Required
 * **Code:** 200 <br />
   
 * **Content:**<br />
+
 <pre>
 {
 		
@@ -70,6 +73,32 @@ Authorization(bitgo access-token)        {String} *Required
                 "value": ""
             }
         ],
+        "message": "Error"
+    }
+}
+</pre>
+
+OR
+
+<pre>
+{
+    "data": {},
+    "meta": {
+        "version": "1.0",
+        "received": "2017-11-23T13:03:15.415Z",
+        "executed": 1511442197517
+    },
+    "response": {
+        "code": 400,
+        "errors": {
+            "status": 401,
+            "result": {
+                "error": "unauthorized",
+                "name": "Unauthorized",
+                "requestId": "cjachmred5crciyrs18kbtum7"
+            },
+            "invalidToken": true
+        },
         "message": "Error"
     }
 }

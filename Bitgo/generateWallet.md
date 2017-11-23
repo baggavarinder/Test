@@ -173,3 +173,29 @@ Authorization(bitgo access-token)        {String} *Required
     }
 }
 </pre>
+
+OR
+
+<pre>
+{
+    "data": {},
+    "meta": {
+        "version": "1.0",
+        "received": "2017-11-23T13:03:15.415Z",
+        "executed": 1511442197517
+    },
+    "response": {
+        "code": 400,
+        "errors": {
+            "status": 401,
+            "result": {
+                "error": "unauthorized",
+                "name": "Unauthorized",
+                "requestId": "cjachmred5crciyrs18kbtum7"
+            },
+            "invalidToken": true
+        },
+        "message": "Error"
+    }
+}
+</pre>

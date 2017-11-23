@@ -11,15 +11,13 @@ Description:create a new receive address for your wallet.
    POST
 
    
- * **Query String Parameters:**<br />
-   
 * **Headers:**
 
 Content-Type: "application/json"
 
 Authorization(bitgo access-token)        {String} *Required. 
    
-* **Query Parameters:**
+* **Query String Parameters:**
 <pre>
 {
    coin   {String} *Required coin.
@@ -97,5 +95,31 @@ gasPrice   {Integer} Optional gasPrice.
 	"message": "Error"
 			
 	}
+}
+</pre>
+
+OR
+
+<pre>
+{
+    "data": {},
+    "meta": {
+        "version": "1.0",
+        "received": "2017-11-23T13:03:15.415Z",
+        "executed": 1511442197517
+    },
+    "response": {
+        "code": 400,
+        "errors": {
+            "status": 401,
+            "result": {
+                "error": "unauthorized",
+                "name": "Unauthorized",
+                "requestId": "cjachmred5crciyrs18kbtum7"
+            },
+            "invalidToken": true
+        },
+        "message": "Error"
+    }
 }
 </pre>
