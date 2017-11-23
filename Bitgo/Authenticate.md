@@ -1,5 +1,5 @@
-* **Authenticate**
----
+**Bitgo Authenticate Api**
+----
 Description: authenticate the user.
 
 * **URL**
