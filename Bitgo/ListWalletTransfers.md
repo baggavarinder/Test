@@ -69,7 +69,7 @@ Description : Retrieves a list of transfers.
         "errors": [
             {
                 "param": "coin",
-                "msg": "walllet type is required",
+                "msg": "wallet type is required",
                 "value": ""
             }
         ],
