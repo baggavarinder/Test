@@ -1,6 +1,6 @@
 **Bitgo Authenticate Api**
 ----
-Description: authenticate the user.
+Description : authenticate the user.
 
 * **URL**
 
@@ -17,7 +17,7 @@ Description: authenticate the user.
 {
 	 username   {String} *Required User's email address.
 	 password   {String} *Required password.
-	 otp   {String} *Required 2nd factor authentication token.
+	 otp        {String} *Required 2nd factor authentication token.
 }	 
 </pre>   
 
@@ -27,12 +27,14 @@ Description: authenticate the user.
 { 
   "username": "baggavarinder@gmail.com",
   "password": "sol!mp2^5sp",
-  "otp":"248989" 
+  "otp":      "248989" 
 }
 </pre>  
 
 * **Success Response:**
 
+	Code: 200 
+ 
 <pre>
 {
     "data": {
@@ -114,6 +116,8 @@ Description: authenticate the user.
 </pre>
 	
 * **Error Response:**
+
+	Code: 401 NOT FOUND
 
 <pre>
 {

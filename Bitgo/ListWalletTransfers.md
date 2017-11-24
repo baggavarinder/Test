@@ -53,7 +53,7 @@ Description : Retrieves a list of transfers.
 
 * **Error Response:**
 
-* **Code:** 401 NOT FOUND <br />
+    Code: 401 NOT FOUND
   
 * **Content:** 
 <pre>

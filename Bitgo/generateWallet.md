@@ -1,22 +1,22 @@
 **Generate Wallet Api**
 ----
- Description:generate wallet.
+Description : generate wallet.
 
 * **URL:**
 
-bitgo/createWallet
+	bitgo/createWallet
 
 * **Method:**
 
-POST
+	POST
    
 * **Query String Parameters:**<br />
    
 * **Headers:**
 
-Content-Type: "application/json"
+	Content-Type: "application/json"
 
-Authorization(bitgo access-token)        {String} *Required
+	Authorization {String} *Required : "bitgo access-token"
    	  
 * **Body:**
 <pre>
@@ -38,7 +38,7 @@ Authorization(bitgo access-token)        {String} *Required
 
 * **Success Response:**
 
-* **Code:** 200 <br />
+	Code: 200 <br />
 
 * **Content:**
 <pre>
@@ -148,7 +148,7 @@ Authorization(bitgo access-token)        {String} *Required
 
 * **Error Response:**
 
-* **Code:** 401 NOT FOUND <br />
+	Code: 401 NOT FOUND
   
 * **Content:** 
 <pre>
@@ -185,7 +185,7 @@ OR
         "executed": 1511442197517
     },
     "response": {
-        "code": 400,
+        "code": 401,
         "errors": {
             "status": 401,
             "result": {

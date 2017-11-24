@@ -13,32 +13,32 @@ Description : create a new receive address for your wallet.
    
 * **Headers:**
 
-Content-Type: "application/json"
+	Content-Type: "application/json"
 
-Authorization {String} *Required : "bitgo access-token"
+	Authorization {String} *Required : "bitgo access-token"
    
 * **Query String Parameters:**
 <pre>
 {
-   coin   {String} *Required coin.
-   id   {String} *Required Id of the wallet.
+	coin   {String} *Required coin.
+	id     {String} *Required Id of the wallet.
 }
 </pre>
 
 * **Body Parameters:**
 
-gasPrice   {Integer} Optional gasPrice.
+	gasPrice   {Integer} Optional gasPrice.
 	   
 * **Example:**
 
 	{
-		"gasPrice":100,
-		"id":"5a15790fb1d959c307149a60a7bc5a98"
+		"gasPrice": 100,
+		"id": "5a15790fb1d959c307149a60a7bc5a98"
 	}
 
 * **Success Response:**
 
-* **Code:** 200 <br />
+	Code: 200
   
 * **Content:**
 <pre>
@@ -69,7 +69,7 @@ gasPrice   {Integer} Optional gasPrice.
 		
 * **Error Response:**
 
-* **Code:** 401 NOT FOUND <br />
+	Code: 401 NOT FOUND
   
 * **Content:** 
 <pre>		
@@ -109,7 +109,7 @@ OR
         "executed": 1511442197517
     },
     "response": {
-        "code": 400,
+        "code": 401,
         "errors": {
             "status": 401,
             "result": {
