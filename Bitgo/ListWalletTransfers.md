@@ -1,6 +1,6 @@
 **List wallet transfers**
 ----
-Description:Retrieves a list of transfers.
+Description: Retrieves a list of transfers.
 
 * **URL:**
 
@@ -15,15 +15,15 @@ Description:Retrieves a list of transfers.
 <pre>
 {
    coin   {String} *Required coin.
-   id   {String} *Required Id of the wallet.
+   id     {String} *Required Id of the wallet.
 }
 </pre> 
 
 * **Headers:**
 
-Content-Type: "application/json"
+   Content-Type: "application/json"
 
-Authorization(bitgo access-token)        {String} *Required 
+   Authorization(bitgo access-token): {String} *Required 
 
 * **Success Response:**<br />
 
