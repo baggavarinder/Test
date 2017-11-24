@@ -26,7 +26,7 @@ Description : authenticate the user.
 <pre>
 { 
 	"username": "baggavarinder@gmail.com",
-	"password": "sol!mp2^5sp",
+	"password": "password",
 	"otp":      "248989" 
 }
 </pre>  
