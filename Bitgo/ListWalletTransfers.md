@@ -1,6 +1,6 @@
 **List wallet transfers**
 ----
-Description: Retrieves a list of transfers.
+Description : Retrieves a list of transfers.
 
 * **URL:**
 

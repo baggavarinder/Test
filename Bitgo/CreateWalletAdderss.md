@@ -1,6 +1,6 @@
 **Create Wallet Address**
 ----
-Description: create a new receive address for your wallet.
+Description : create a new receive address for your wallet.
 
 * **URL:**
 
