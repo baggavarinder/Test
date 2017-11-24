@@ -27,7 +27,7 @@ Description : Retrieves a list of transfers.
 
 * **Success Response:**<br />
 
-* **Code:** 200 <br />
+    Code: 200 
   
 * **Content:**<br />
 
