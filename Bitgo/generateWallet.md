@@ -29,11 +29,11 @@ Description : generate wallet.
 
 * **Example:**
 <pre>
-	{
-		"label":"leela",
-		"passphrase":"secretpassphrase1a5df8380e0e30",
-		"walletType":"tltc"
-	}
+{
+	"label":"leela",
+	"passphrase":"secretpassphrase1a5df8380e0e30",
+	"walletType":"tltc"
+}
 </pre>
 
 * **Success Response:**
