@@ -34,6 +34,8 @@ Description : authenticate the user.
 * **Success Response:**
 
 	Code: 200 
+	
+* **Content:**<br />
  
 <pre>
 {
@@ -119,6 +121,8 @@ Description : authenticate the user.
 
 	Code: 401 NOT FOUND
 
+* **Content:**<br />
+	
 <pre>
 {
   "data": {},
@@ -173,7 +177,7 @@ OR
         },
         {
          "param": "password",
-          "msg": "wallet type is required",
+         "msg": "wallet type is required",
          "value": ""
         },
         {
