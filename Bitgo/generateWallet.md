@@ -21,8 +21,8 @@ Description : generate wallet.
 * **Body:**
 <pre>
 {
-    label        {String} *Required name for the wallet	
-    passphrase   {String} *Required Passphrase to decrypt the wallet’s private key
+    label        {String} *Required name for the wallet
+	passphrase   {String} *Required Passphrase to decrypt the wallet’s private key
 	wallettype   {String} *Required wallet type of coin.
 }    
 </pre>
