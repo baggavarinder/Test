@@ -1,6 +1,6 @@
 **Create Wallet Address**
 ----
-Description:create a new receive address for your wallet.
+Description: create a new receive address for your wallet.
 
 * **URL:**
 
@@ -15,7 +15,7 @@ Description:create a new receive address for your wallet.
 
 Content-Type: "application/json"
 
-Authorization(bitgo access-token)        {String} *Required. 
+Authorization {String} *Required : "bitgo access-token"
    
 * **Query String Parameters:**
 <pre>
