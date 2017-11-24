@@ -31,10 +31,10 @@ Description : create a new receive address for your wallet.
 	   
 * **Example:**
 <pre>
-	{
-		"gasPrice": 100,
-		"id": "5a15790fb1d959c307149a60a7bc5a98"
-	}
+{
+	"gasPrice": 100,
+	"id": "5a15790fb1d959c307149a60a7bc5a98"
+}
 </pre>
 * **Success Response:**
 

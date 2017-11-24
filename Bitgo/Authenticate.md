@@ -15,9 +15,9 @@ Description : authenticate the user.
 
 <pre>
 {
-	 username   {String} *Required User's email address.
-	 password   {String} *Required password.
-	 otp        {String} *Required 2nd factor authentication token.
+	username   {String} *Required User's email address.
+	password   {String} *Required password.
+	otp        {String} *Required 2nd factor authentication token.
 }	 
 </pre>   
 
@@ -25,9 +25,9 @@ Description : authenticate the user.
 
 <pre>
 { 
-  "username": "baggavarinder@gmail.com",
-  "password": "sol!mp2^5sp",
-  "otp":      "248989" 
+	"username": "baggavarinder@gmail.com",
+	"password": "sol!mp2^5sp",
+	"otp":      "248989" 
 }
 </pre>  
 
